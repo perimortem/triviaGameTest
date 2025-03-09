@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/styles.css" rel="stylesheet">
+    <script src="/script/jquery.js"></script>
+    <title>Trivia Game: Welcome</title>
+</head>
+
+<body>
+    <h1>Welcome to Trivia</h1>
+    <div class="container">
+        <div class="form-container">
+            <h2>Log in</h2>
+            <form onsubmit="return handleLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" >Login</button>
+            </form>
+            <a href="forgot-password.html">Forgot Password</a><a href="create-account.html"> Create a new Account</a>
+        </div>
+    </div>
+</body>
+<script src="../script/app.js"> </script>
+
+</html>

@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "adevivye",
+      "password": "z3alot1989!",
+      "currentTopScore": 450,
+      "favoriteCategoryOfTriviaGames": "Science",
+      "email": "user1.science@example.com"
+    },
+    {
+      "id": 2,
+      "username": "User2",
+      "password": "Pass2",
+      "currentTopScore": 320,
+      "favoriteCategoryOfTriviaGames": "History",
+      "email": "user2.history@example.com"
+    },
+    {
+      "id": 3,
+      "username": "User3",
+      "password": "Pass3",
+      "currentTopScore": 120,
+      "favoriteCategoryOfTriviaGames": "Geography",
+      "email": "user3.geo@example.com"
+    },
+    {
+      "id": 4,
+      "username": "User4",
+      "password": "Pass4",
+      "currentTopScore": 550,
+      "favoriteCategoryOfTriviaGames": "Entertainment",
+      "email": "user4.ent@example.com"
+    },
+    {
+      "id": 5,
+      "username": "User5",
+      "password": "Pass5",
+      "currentTopScore": 600,
+      "favoriteCategoryOfTriviaGames": "Sports",
+      "email": "user5.sports@example.com"
+    },
+    {
+      "id": 6,
+      "username": "User6",
+      "password": "Pass6",
+      "currentTopScore": 420,
+      "favoriteCategoryOfTriviaGames": "Science",
+      "email": "user6.science@example.com"
+    },
+    {
+      "id": 7,
+      "username": "User7",
+      "password": "Pass7",
+      "currentTopScore": 300,
+      "favoriteCategoryOfTriviaGames": "History",
+      "email": "user7.history@example.com"
+    },
+    {
+      "id": 8,
+      "username": "User8",
+      "password": "Pass8",
+      "currentTopScore": 270,
+      "favoriteCategoryOfTriviaGames": "Geography",
+      "email": "user8.geo@example.com"
+    },
+    {
+      "id": 9,
+      "username": "User9",
+      "password": "Pass9",
+      "currentTopScore": 390,
+      "favoriteCategoryOfTriviaGames": "Entertainment",
+      "email": "user9.ent@example.com"
+    },
+    {
+      "id": 10,
+      "username": "User10",
+      "password": "Pass10",
+      "currentTopScore": 500,
+      "favoriteCategoryOfTriviaGames": "Sports",
+      "email": "user10.sports@example.com"
+    },
+    {
+      "id": 11,
+      "username": "User11",
+      "password": "Pass11",
+      "currentTopScore": 200,
+      "favoriteCategoryOfTriviaGames": "Music",
+      "email": "user11.music@example.com"
+    },
+    {
+      "id": 12,
+      "username": "User12",
+      "password": "Pass12",
+      "currentTopScore": 350,
+      "favoriteCategoryOfTriviaGames": "Literature",
+      "email": "user12.lit@example.com"
+    },
+    {
+      "id": 13,
+      "username": "User13",
+      "password": "Pass13",
+      "currentTopScore": 180,
+      "favoriteCategoryOfTriviaGames": "Movies",
+      "email": "user13.movies@example.com"
+    },
+    {
+      "id": 14,
+      "username": "User14",
+      "password": "Pass14",
+      "currentTopScore": 460,
+      "favoriteCategoryOfTriviaGames": "Technology",
+      "email": "user14.tech@example.com"
+    },
+    {
+      "id": 15,
+      "username": "User15",
+      "password": "Pass15",
+      "currentTopScore": 530,
+      "favoriteCategoryOfTriviaGames": "Animals",
+      "email": "user15.animals@example.com"
+    }
+  ]
+}

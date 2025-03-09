@@ -1,0 +1,111 @@
+
+:root {
+    --gap: 2rem;
+  }
+  html{
+    font-size: 67.5%;
+  }
+html, body{
+    display: flex;
+    flex-direction: column;
+    background-color:wheat;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+a,b,em,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-transform: none;
+    text-decoration: none;
+}
+.form-container a{
+    margin-bottom: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-block: var(--gap);
+}
+input{
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+input[type=button], button{
+    width: fit-content;
+    justify-self: flex-end;
+    align-self: flex-end
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0,0,0,.2);
+    padding: var(--gap);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 70vw;
+    min-height: 70vh;
+    border: 1px solid rgba(0,0,0,.1)
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    gap: var(--gap);
+    width: 200px;
+    aspect-ratio: 1;
+}
+.answer{
+    background-color: aquamarine;
+    border:  2px solidrgb(69, 151, 124);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    cursor: pointer;   
+}
+.answer:hover{
+    filter: brightness(.7);
+}
+#answer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.gameState{
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
+#result{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
