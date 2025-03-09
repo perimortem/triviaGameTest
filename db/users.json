@@ -3,15 +3,15 @@
     {
       "id": 1,
       "username": "adevivye",
-      "password": "z3alot1989!",
+      "password": "blob!",
       "currentTopScore": 450,
       "favoriteCategoryOfTriviaGames": "Science",
       "email": "user1.science@example.com"
     },
     {
       "id": 2,
-      "username": "User2",
-      "password": "Pass2",
+      "username": "ddevivye",
+      "password": "cube",
       "currentTopScore": 320,
       "favoriteCategoryOfTriviaGames": "History",
       "email": "user2.history@example.com"
