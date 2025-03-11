@@ -1,15 +1,11 @@
 @font-face {
     font-family: 'BankGothic';
-    src: url('./fonts/BankGothicMediumBT.woff2') format('woff2'),
-         url('./fonts/BankGothicMediumBT.woff') format('woff'),
-         url('./fonts/BankGothicMediumBT.ttf') format('truetype');
+    src: url('./fonts/BankGothicMediumBT.ttf') format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: 'BankGothic';
-    src: url('./fonts/BankGothic-Bold.woff2') format('woff2'),
-         url('./fonts/BankGothic-Bold.woff') format('woff'),
-         url('./fonts/BankGothic-Bold.ttf') format('truetype');
+    src: url('./fonts/BankGothic-Bold.ttf') format('truetype');
     font-weight: bold;
 }
 
@@ -130,6 +126,7 @@ button, .answer, #nextRound{
     border-radius: 1rem;
     padding: 2rem;
     width: 100%;
+    height: 100%;
     cursor: pointer;
     max-width: 300px;
     margin: 0 auto;
@@ -197,3 +194,24 @@ pointer-events: none;
     color: gold;
 
 }
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    visibility: hidden !important;    
+}
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
