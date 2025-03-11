@@ -7,7 +7,7 @@
     <script src="/script/jquery.js"></script>
     <title>Trivia Game: Welcome</title>
 </head>
-<body onload="getTrivia()">
+<body onload="getTrivia(); resetHealthAndScore() ">
     <div class="gameState">
         <div class="timer">Time: <span id="timer"></span> </div>
         <div class="score">Score: <span id="score"></span></div>
@@ -15,10 +15,17 @@
     <h1>Welcome to Trivia</h1>
     <div class="container">
     <div id="trivia-container">
-        <div id="question-container"></div>
+        <p class="h4" id="question-container"></p>
         <div id="answer-container"></div>
-        <div id="result"></div>
+        <p class="h4" id="result"></p>
+        <button id="nextRound" value="Next Round" onclick="getTrivia()">Next Round</button>
     </div>
-    </div></body>
+    </div>
+    <div class="playerHealthWrapper">
+    <div id="playerHealthBar">
+      
+    </div>
+</div>
+</body>
 <script src="../script/app.js"> </script>
 </html>

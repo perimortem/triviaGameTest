@@ -1,14 +1,53 @@
+@font-face {
+    font-family: 'BankGothic';
+    src: url('./fonts/BankGothicMediumBT.woff2') format('woff2'),
+         url('./fonts/BankGothicMediumBT.woff') format('woff'),
+         url('./fonts/BankGothicMediumBT.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'BankGothic';
+    src: url('./fonts/BankGothic-Bold.woff2') format('woff2'),
+         url('./fonts/BankGothic-Bold.woff') format('woff'),
+         url('./fonts/BankGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
 
 :root {
     --gap: 2rem;
+    --font: 0 'BankGothic', sans-serif 
   }
-  html{
-    font-size: 67.5%;
+
+  h1,h2,h3,h4,h5,h6,p,button,a,div,span{
+    font: var(--font);
+    font-size: 1rem;
   }
+  h1,.h1{
+    font-size: 3rem;
+  }
+  h2,.h2{
+    font-size: 2.5rem;
+  }
+  h3,.h3{
+    font-size: 2.2rem;
+  }
+  h4,.h4{
+    font-size: 2rem;
+  }
+  h5,.h5{
+    font-size: 1.7rem;
+  }
+  h6,.h6{
+    font-size: 1.5rem;
+  }
+
 html, body{
     display: flex;
     flex-direction: column;
-    background-color:wheat;
+    background-color: #7ee8fa;
+    background: rgb(0,71,171);
+    background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
     width: 100%;
     height: 100%;
     padding: 0;
@@ -65,32 +104,64 @@ input[type=button], button{
     justify-content: space-between;
     gap: var(--gap);
 }
+#trivia-container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: brown;
+    background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
     color: white;
     gap: var(--gap);
     width: 200px;
     aspect-ratio: 1;
 }
-.answer{
-    background-color: aquamarine;
-    border:  2px solidrgb(69, 151, 124);
+button, .answer, #nextRound{
+    background: rgb(0,51,102);
+    background: linear-gradient(159deg, rgba(0,51,102,1) 0%, rgba(15,82,186,1) 100%);
+    border: solid 2px rgba(0,0,0,.2);
+    color: white;
     border-radius: 1rem;
     padding: 2rem;
     width: 100%;
-    cursor: pointer;   
+    cursor: pointer;
+    max-width: 300px;
+    margin: 0 auto;
 }
-.answer:hover{
+.answer:hover, #nextRound:hover{
     filter: brightness(.7);
+}
+.answer:disabled, #nextRound:disabled{
+    filter: grayscale(1);
+    pointer-events: none;
+    color:gray
+}
+#nextRound{
+visibility: hidden;
+}
+#question-container,
+#result,
+#answer-container{
+max-width: 600px;
+padding-bottom: 2rem;
 }
 #answer-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--gap);
+
+}
+.answer.correct{
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    color: black;
+pointer-events: none;
 }
 
 .gameState{
@@ -100,12 +171,29 @@ input[type=button], button{
     display: flex;
     justify-content: space-around;
     top: 0;
-    background-color: black;
+    background-color: rgba(0,0,0,.5);
     color: white;
-    font-size: 2rem;
+
 }
 #result{
     text-align: center;
-    font-size: 3rem;
-    padding: 2rem;
+}
+.playerHealthWrapper{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+#playerHealthBar{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    color: gold;
+
 }
